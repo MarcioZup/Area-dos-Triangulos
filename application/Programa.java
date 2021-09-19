@@ -25,11 +25,12 @@ public class Programa {
         y.ladoB = teclado.nextDouble();
         y.ladoC = teclado.nextDouble();
 
-        double p = (x.ladoA + x.ladoB + x.ladoC) / 2;
-        double areaX = Math.sqrt(p * (p - x.ladoA) * (p - x.ladoB) * (p - x.ladoC));
+        //Colocada fórmula do cálculo como um método dentro da classe Triângulo
 
-        p = (y.ladoA + y.ladoB + y.ladoC) / 2;
-        double areaY = Math.sqrt(p * (p - y.ladoA) * (p - y.ladoB) * (p - y.ladoC));
+        //Calculando área chamando método da classe triângulo reaproveitando código.
+        double areaX = x.area();
+
+        double areaY = y.area();
 
         System.out.printf("Área do triângulo X : %.2f%n", areaX);
         System.out.printf("Área do triângulo Y : %.2f%n", areaY);
