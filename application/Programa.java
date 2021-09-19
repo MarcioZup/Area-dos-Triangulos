@@ -7,10 +7,14 @@ import java.util.Scanner;
 public class Programa {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
+
+        //Instanciando objetos triângulo x e Y
         Triangulo x, y;
         x = new Triangulo();
         y = new Triangulo();
 
+
+        //Recebendo dados de entrada referente às medidas dos lados do triângulo
         System.out.println("Entre com as medidas do triângulo X: ");
         x.ladoA = teclado.nextDouble();
         x.ladoB = teclado.nextDouble();
